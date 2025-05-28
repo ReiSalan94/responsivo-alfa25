@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escritório de Advocacia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b82f5ae24a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#">Menu</a>
+        <nav class="menu-desktop">
+            LALAdvogados
+            <ul class="menu-open">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#profissionais">Profissionais</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+        </nav>
+
+        <nav class="menu-mobile">
+            <a href="#">Menu <i class="fa-solid fa-bars"></i></a>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -22,8 +35,12 @@
             </ul>
         </nav>
     </header>
+
+    <div class="slider">
+
+    </div>
     <div class="content">
-        <div id="#sobre" class="texto">
+        <div id="sobre" class="texto">
             <h2>Sobre nós</h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic aut dignissimos vero asperiores est magnam
@@ -33,58 +50,58 @@
             <div class="cta-btn">
                 <a target="_blank"
                     href="https://api.whatsapp.com/send?phone=5544999999999&text=Gostaria de falar com um especialista">
-                    Fale com um especialista
+                    <i class="fa-brands fa-whatsapp"></i> Fale com um especialista
                 </a>
             </div>
 
         </div>
 
         <div class="item missao">
-            <h2>Missão</h2>
+            <h2><i class="fa-solid fa-newspaper"></i> Missão</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe excepturi vel nisi non dolorem magni ipsa
                 quis velit quod debitis autem quam eligendi, natus error fuga ducimus dolores perferendis similique.</p>
         </div>
 
 
         <div class="item visao">
-            <h2>Visão</h2>
+            <h2><i class="fa-solid fa-circle-check"></i> Visão</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe excepturi vel nisi non dolorem magni ipsa
                 quis velit quod debitis autem quam eligendi, natus error fuga ducimus dolores perferendis similique.</p>
         </div>
 
 
         <div class="item valores">
-            <h2>Valores</h2>
+            <h2><i class="fa-solid fa-handshake"></i> Valores</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe excepturi vel nisi non dolorem magni ipsa
                 quis velit quod debitis autem quam eligendi, natus error fuga ducimus dolores perferendis similique.</p>
         </div>
     </div>
     <div id="servicos">
         <div class="item">
-            <img src="#">
+            <i class="fa-solid fa-heart-circle-exclamation"></i>
             <h2>Divórcio</h2>
         </div>
         <div class="item">
-            <img src="#">
+            <i class="fa-solid fa-bowl-food"></i>
             <h2>Pensão Alimentícia</h2>
         </div>
         <div class="item">
-            <img src="#">
+            <i class="fa-solid fa-ring"></i>
             <h2>União Estável</h2>
         </div>
 
         <div class="item">
-            <img src="#">
+            <i class="fa-solid fa-children"></i>
             <h2>Guarda dos Filhos</h2>
         </div>
 
         <div class="item">
-            <img src="#">
+            <i class="fa-solid fa-scale-unbalanced-flip"></i>
             <h2>Direito de Herança</h2>
         </div>
 
         <div class="item">
-            <img src="#">
+            <i class="fa-solid fa-plane-departure"></i>
             <h2>Viagem Internacioal</h2>
         </div>
     </div>
@@ -93,7 +110,7 @@
             <h2>Equipe de advogados especializados em Direito Familiar</h2>
             <div class="item">
                 <div class="imagem">
-                    <img src="#">
+                    <img src="https://placehold.co/200x200">
                 </div>
                 <h2>Nome profissional 1</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores rem blanditiis,
@@ -103,7 +120,7 @@
 
             <div class="item">
                 <div class="imagem">
-                    <img src="#">
+                    <img src="https://placehold.co/200x200">
                 </div>
                 <h2>Nome profissional 2</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores rem blanditiis,
@@ -113,7 +130,7 @@
 
             <div class="item">
                 <div class="imagem">
-                    <img src="#">
+                    <img src="https://placehold.co/200x200">
                 </div>
                 <h2>Nome profissional 3</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores rem blanditiis,
@@ -144,7 +161,32 @@
                     </label>
                 </form>
             </div>
+
+            <div class="item">
+                <h2>Dados de contato</h2>
+                <p><i class="fa-solid fa-envelope"></i> contato@nome.com.br</p>
+                <p><i class="fa-solid fa-phone"></i> (44) 9 9999-9999</p>
+                <p><i class="fa-solid fa-location-dot"></i> Rua 123 lalala, lerigou</p>
+            </div>
+
+            <div class="item">
+                <h2>Desenvolvido por: </h2>
+                <p>Aluno SEU NOME AQUI</p>
+                <p>RA: 007</p>
+            </div>
         </div>
+
+        <div class="chat">
+            <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=5544999999999&text=Gostaria de falar com um especialista">
+                <span>
+                    Dúvidas,<br>
+                    Clique aqui!
+                </span>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
     </footer>
 
 </body>
