@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: #f4f4f4;
+    font-family: "Roboto", sans-serif;
 }
 
 nav .menu {
@@ -150,7 +152,51 @@ footer h2 {
     display: none;
 }
 
+.content.page img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.content.page {
+    font-size: 22px;
+}
+
+.content.page p {
+    text-align: justify;
+}
+
+.page #servicos {
+    background-color: #f4f4f4;
+    color: #4d4d4d;
+}
+
+.page #servicos h2,
+.page #servicos i {
+    color: #4d4d4d;
+}
+a{
+    opacity: 1;
+    transition: 0.5s;
+}
+a:hover{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+
 @media (min-width:680px) {
+    .content.page p {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .content.page img {
+        width: 30%;
+        font-display: inline-block;
+
+    }
+
     .menu-mobile {
         display: none;
     }
@@ -170,7 +216,7 @@ footer h2 {
     }
 
     .item {
-        width: 29% !important;
+        width: 28% !important;
         padding: 1%;
         margin: 1%;
         display: inline-block;
@@ -205,7 +251,6 @@ footer h2 {
 
 .slider {
     height: 350px;
-    background: url(slider.png)
-    50% -95px / cover no-repeat fixed;
+    background: url(slider.png) 50% -95px / cover no-repeat fixed;
     ;
 }
